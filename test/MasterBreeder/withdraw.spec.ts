@@ -6,7 +6,7 @@ import { expandTo18Decimals } from '../shared/utilities'
 
 import { deployMasterBreeder, deployGovernanceToken, TOKEN_NAME, TOKEN_SYMBOL, TOTAL_CAP, MANUAL_MINT_LIMIT } from '../shared/deploy'
 
-import ERC20Mock from '../../build/ERC20Mock.json'
+import ERC20Mock from '../../build/contracts/ERC20Mock.json'
 
 chai.use(solidity)
 

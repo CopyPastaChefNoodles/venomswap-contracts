@@ -7,7 +7,7 @@ import { advanceBlockTo, advanceBlockWith, latestBlock } from '../shared/time'
 
 import { deployMasterBreeder, deployGovernanceToken, TOKEN_NAME, TOKEN_SYMBOL, TOTAL_CAP, MANUAL_MINT_LIMIT } from '../shared/deploy'
 
-import ERC20Mock from '../../build/ERC20Mock.json'
+import ERC20Mock from '../../build/contracts/ERC20Mock.json'
 
 chai.use(solidity)
 
@@ -301,7 +301,7 @@ describe('MasterBreeder::Rewards', () => {
       expect(await govToken.lockOf(bob.address)).to.eq('0')
 
       if (debugMessages) humanBalance(provider, govToken, 'totalLock')
-      expect(await govToken.totalLock()).to.eq('77824000000000000000')
+      expect(await govToken.totalLock()).to.eq('97280000000000000000')
     })
 
     it("should not distribute VIPERs if no one deposit", async function () {

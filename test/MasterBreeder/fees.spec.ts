@@ -7,7 +7,7 @@ import { advanceBlockTo } from '../shared/time'
 
 import { deployMasterBreeder, deployGovernanceToken } from '../shared/deploy'
 
-import ERC20Mock from '../../build/ERC20Mock.json'
+import ERC20Mock from '../../build/contracts/ERC20Mock.json'
 
 const ZERO_ADDRESS = "0x0000000000000000000000000000000000000000"
 const debugMessages = false

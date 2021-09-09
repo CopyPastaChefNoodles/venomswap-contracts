@@ -4,8 +4,8 @@ import { BigNumberish } from 'ethers/utils'
 
 import { expandTo18Decimals } from './utilities'
 
-import MasterBreeder from '../../build/MasterBreeder.json'
-import GovernanceToken from '../../build/GovernanceToken.json'
+import MasterBreeder from '../../build/contracts/MasterBreeder.json'
+import GovernanceToken from '../../build/contracts/GovernanceToken.json'
 
 const overrides = {
   gasLimit: 9999999

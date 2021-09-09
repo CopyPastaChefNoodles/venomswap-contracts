@@ -249,21 +249,21 @@ contract MasterBreeder is Ownable, Authorizable, ReentrancyGuard {
             govToken.mint(address(devaddr), GovTokenForDev);
             //Dev fund has xx% locked during the starting bonus period. After which locked funds drip out linearly each block over 3 years.
             if (block.number <= FINISH_BONUS_AT_BLOCK) {
-                govToken.lock(address(devaddr), GovTokenForDev.mul(75).div(100));
+                govToken.lock(address(devaddr), GovTokenForDev.mul(95).div(100));
             }
         }
         if (GovTokenForLP > 0) {
             govToken.mint(liquidityaddr, GovTokenForLP);
             //LP + Partnership fund has only xx% locked over time as most of it is needed early on for incentives and listings. The locked amount will drip out linearly each block after the bonus period.
             if (block.number <= FINISH_BONUS_AT_BLOCK) {
-                govToken.lock(address(liquidityaddr), GovTokenForLP.mul(45).div(100));
+                govToken.lock(address(liquidityaddr), GovTokenForLP.mul(95).div(100));
             }
         }
         if (GovTokenForCom > 0) {
             govToken.mint(comfundaddr, GovTokenForCom);
             //Community Fund has xx% locked during bonus period and then drips out linearly over 3 years.
             if (block.number <= FINISH_BONUS_AT_BLOCK) {
-                govToken.lock(address(comfundaddr), GovTokenForCom.mul(85).div(100));
+                govToken.lock(address(comfundaddr), GovTokenForCom.mul(95).div(100));
             }
         }
         if (GovTokenForFounders > 0) {

@@ -5,8 +5,8 @@ import { deployMasterBreeder, deployGovernanceToken } from './shared/deploy'
 import { expandTo18Decimals, encodeParameters } from './shared/utilities'
 import { latest, duration, increase } from './shared/time'
 
-import Timelock from '../build/Timelock.json'
-import ERC20Mock from '../build/ERC20Mock.json'
+import Timelock from '../build/contracts/Timelock.json'
+import ERC20Mock from '../build/contracts/ERC20Mock.json'
 
 const rewardsPerBlock = 1
 const rewardsStartAtBlock = 100

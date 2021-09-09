@@ -12,3 +12,8 @@ coverage.json
 .env
 .DS_Store
 yarn-error.log
+migrations/*
+.env
+.env-template
+truffle-config.js
+*.txt

@@ -1,6 +1,6 @@
 {
-  "name": "@venomswap/contracts",
-  "version": "1.0.6",
+  "name": "@copypastachef/contracts",
+  "version": "1.0.7",
   "license": "MIT",
   "description": "Token, Liquidity Mining and Governance contracts for VenomSwap & the Venom Protocol",
   "files": [
@@ -36,20 +36,30 @@
     "rimraf": "^3.0.0",
     "solc": "0.6.12",
     "ts-node": "^8.5.4",
-    "typescript": "^3.7.3"
+    "typescript": "^3.7.3",
+    "@ethersproject/solidity": "^5.1.0",
+    "@harmony-js/core": "^0.1.57",
+    "@harmony-js/utils": "^0.1.56",
+    "@truffle/hdwallet-provider": "^1.4.1",
+    "truffle": "^5.1.41",
+    "truffle-flattener": "^1.4.4",
+    "truffle-hdwallet-provider": "^1.0.17",
+    "tslib": "^2.2.0",
+    "@openzeppelin/contracts": "^3.1.0",
+    "dotenv":"^10.0.0"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^3.1.0",
-    "@venomswap/core": "^1.0.0",
+    "@copypastachef/core": "^1.0.0",
     "@venomswap/lib": "^1.0.0",
-    "@venomswap/periphery": "^1.0.0"
+    "@copypastachef/periphery": "^1.0.0"
   },
   "scripts": {
     "lint": "yarn prettier ./test/*.ts --check",
     "lint:fix": "yarn prettier ./test/*.ts --write",
     "clean": "rimraf ./build/",
     "precompile": "yarn clean",
-    "compile": "waffle .waffle.json",
+    "compile": "truffle compile",
     "pretest": "yarn compile",
     "test": "mocha",
     "prepublishOnly": "yarn test"

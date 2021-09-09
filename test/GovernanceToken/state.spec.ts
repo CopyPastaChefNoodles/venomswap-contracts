@@ -5,7 +5,7 @@ import { solidity, MockProvider, deployContract } from 'ethereum-waffle'
 import { expandTo18Decimals } from '../shared/utilities'
 import { advanceBlockTo, latestBlock } from '../shared/time'
 
-import GovernanceToken from '../../build/GovernanceToken.json'
+import GovernanceToken from '../../build/contracts/GovernanceToken.json'
 
 chai.use(solidity)
 

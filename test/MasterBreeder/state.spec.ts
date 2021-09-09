@@ -8,7 +8,7 @@ import { expandTo18Decimals } from '../shared/utilities'
 
 import { deployMasterBreeder } from '../shared/deploy'
 
-import GovernanceToken from '../../build/GovernanceToken.json'
+import GovernanceToken from '../../build/contracts/GovernanceToken.json'
 
 chai.use(solidity)
 

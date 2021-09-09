@@ -10,11 +10,11 @@ import { deployGovernanceToken, deployMasterBreeder } from './shared/deploy'
 
 import { createLpToken } from './shared/lp'
 
-import Pit from '../build/Pit.json'
-import ERC20Mock from '../build/ERC20Mock.json'
-import UniswapV2Factory from '@venomswap/core/build/UniswapV2Factory.json'
-import UniswapV2Pair from '@venomswap/core/build/UniswapV2Pair.json'
-import GovernanceVote from '../build/GovernanceVote.json'
+import Pit from '../build/contracts/Pit.json'
+import ERC20Mock from '../build/contracts/ERC20Mock.json'
+import UniswapV2Factory from '@copypastachef/core/build/contracts/UniswapV2Factory.json'
+import UniswapV2Pair from '@copypastachef/core/build/contracts/UniswapV2Pair.json'
+import GovernanceVote from '../build/contracts/GovernanceVote.json'
 
 chai.use(solidity)
 

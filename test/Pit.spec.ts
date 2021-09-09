@@ -4,7 +4,7 @@ import { solidity, MockProvider, deployContract } from 'ethereum-waffle'
 
 import { deployGovernanceToken } from './shared/deploy'
 
-import Pit from '../build/Pit.json'
+import Pit from '../build/contracts/Pit.json'
 
 chai.use(solidity)
 
